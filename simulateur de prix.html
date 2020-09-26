@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Distance entre deux villes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+            <div class="row">
+                <h1>CALCULER LA DISTANCE DE CONDUITE</h1>
+            </div>
+    </div>
+
+    <div class="container">
+        <form>
+            <!-- Location 1 -->
+            <div class="row">
+                <div class="location-label">
+                    <label>Origin: </label>                                    
+                </div>
+                <div class="location-input">
+                    <input onfocus="this.value=''" type="text" id="place1" name="origin" placeholder="indiquez votre départ"> 
+                </div>
+            </div>
+            <!-- Location 2 -->
+            <div class="row">
+                <div class="location-label">
+                    <label>Destination: </label>
+                </div>
+                <div class="location-input">
+                    <input onfocus="this.value=''" type="text" id="place2" name="destination" placeholder="indiquez votre arrivée">
+                </div>
+            </div>
+
+            <!-- Stats table -->              
+            <div id="prix" class="result-table"></div>
+       </form>
+                
+            <div class="container-map" id="Mymaps"></div>   
+    </div>
+</div>
+
+</body>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvAEZD_Vs209BJcs9GtytVbhrTML36c9s&libraries=places"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="style.js"></script>
+</html>
